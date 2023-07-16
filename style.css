@@ -2,37 +2,78 @@ html {
   height: 100%;
   width: 100%;
 }
+
 body {
-        margin: 0;
-        padding: 0;
-        background-color: #EAE0B9;
-      }
+  margin: 0;
+  padding: 0;
+  background-color: #EAE0B9;
+}
 
-      .header {
-        padding: 10px;
-        box-sizing: border-box;
-        display: flex; /* Use flexbox to align items */
-        align-items: center; /* Center the content vertically */
-        justify-content: space-between; /* Spread the content horizontally */
-        background-color: #4B755C;
-        color: white;
-        font-size: 24px;
-        font-weight: 300;
-        font-family: Arial, Helvetica, sans-serif;
-      }
+#card-container {
+  width: 100%;
+  display: flex;
+  background-color: #4B755C;
+}
 
-      /* Style the buttons */
-      .header-button {
-        padding: 5px 10px;
-        border: none;
-        background-color: transparent;
-        color: white;
-        font-size: 20px;
-        cursor: pointer;
-        margin: 0 5px; /* add it to all buttons */
-      }
-      /* Align the buttons to the right */
-      .header-buttons {
-        display: flex; /* Use flexbox to align items */
-        align-items: center; /* Center the content vertically */
-      }
+.container img {
+  width: 5%;
+  height: 5%;
+  padding-left: 20px;
+  margin-top: 7px;
+}
+
+.container h1 {
+  padding-left: 10px;
+}
+
+.container {
+  margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 800;
+  color: #EAE0B9;
+}
+.container nav {
+  float: right;
+  flex-direction: column;
+  margin-left: 400px
+}
+
+.container nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+.container nav li {
+  display: inline-block;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container nav li a {
+  color: #EAE0B9;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.container nav li a:hover {
+  color: #C8B282;
+}
+
+.container nav li a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #C8B282;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.container nav li a:hover::before {
+  width: 100%;
+}
